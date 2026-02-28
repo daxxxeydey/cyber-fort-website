@@ -23,10 +23,10 @@ export function RadialMenu() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const radius = 120; // Distance of icons from center
+  const radius = 119; // Distance of icons from center
 
   return (
-    <div className="fixed bottom-8 left-8 z-50 flex items-center justify-center">
+    <div className="left-8 z-50 flex items-center justify-center">
       <AnimatePresence>
         {isOpen && (
           <>

@@ -13,7 +13,7 @@ export function MatrixBackground() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()_+{}|:<>?~";
+    const chars = "DARSHANAABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()_+{}|:<>?~";
     const charArray = chars.split("");
     
     const fontSize = 14;

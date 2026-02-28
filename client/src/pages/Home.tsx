@@ -150,15 +150,15 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="border border-white/10 p-6 bg-white/5 rounded-xl text-center flex flex-col items-center justify-center">
-                <div className="text-4xl font-display text-primary mb-2">5+</div>
+                <div className="text-4xl font-display text-primary mb-2">4+</div>
                 <div className="text-sm tracking-widest font-mono">EVENTS</div>
               </div>
               <div className="border border-white/10 p-6 bg-white/5 rounded-xl text-center flex flex-col items-center justify-center">
-                <div className="text-4xl font-display text-secondary mb-2">24H</div>
-                <div className="text-sm tracking-widest font-mono">HACKATHON</div>
+                <div className="text-4xl font-display text-secondary mb-2">1000+</div>
+                <div className="text-sm tracking-widest font-mono">PARTICIPANTS</div>
               </div>
               <div className="border border-white/10 p-6 bg-white/5 rounded-xl text-center flex flex-col items-center justify-center col-span-2">
-                <div className="text-4xl font-display text-accent mb-2">₹50K+</div>
+                <div className="text-4xl font-display text-accent mb-2">₹1Lakhs+</div>
                 <div className="text-sm tracking-widest font-mono">PRIZE POOL</div>
               </div>
             </div>
@@ -175,16 +175,16 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <NeonCard color="primary">
+            <NeonCard color="primary" onClick={() => setSelectedEvent("Code Combat")}>
               <h3 className="text-2xl font-display text-white mb-4">CODE COMBAT</h3>
-              <p className="font-mono text-white/70 mb-6">Algorithm optimization and competitive programming. Speed and efficiency are your only allies.</p>
+              <p className="font-mono text-white/70 mb-6"></p>
               <ul className="space-y-2 font-mono text-sm text-primary">
                 <li className="flex items-center gap-2"><ChevronRight size={16}/> Solo / Duo Teams</li>
                 <li className="flex items-center gap-2"><ChevronRight size={16}/> 3 Rounds</li>
               </ul>
             </NeonCard>
             
-            <NeonCard color="primary" delay={0.2}>
+            <NeonCard color="primary" delay={0.2} onClick={() => setSelectedEvent("Kernel Challenge")}>
               <h3 className="text-2xl font-display text-white mb-4">KERNEL CHALLENGE</h3>
               <p className="font-mono text-white/70 mb-6">Deep system exploitation, reverse engineering, and finding vulnerabilities in custom kernels.</p>
               <ul className="space-y-2 font-mono text-sm text-primary">
@@ -205,17 +205,17 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <NeonCard color="secondary">
+            <NeonCard color="secondary" onClick={() => setSelectedEvent("thinklink")}>
               <h3 className="text-xl font-display text-white mb-4">THINK & LINK</h3>
               <p className="font-mono text-sm text-white/70">Connect the dots in this rapid-fire trivia and logic puzzle gauntlet.</p>
             </NeonCard>
             
-            <NeonCard color="secondary" delay={0.2}>
+            <NeonCard color="secondary" delay={0.2} onClick={() => setSelectedEvent("esports")}>
               <h3 className="text-xl font-display text-white mb-4">E-SPORTS</h3>
-              <p className="font-mono text-sm text-white/70">Valroant and BGMI tournaments. Bring your squad and dominate the servers.</p>
+              <p className="font-mono text-sm text-white/70">Valroant and FreeFire tournaments. Bring your squad and dominate the servers.</p>
             </NeonCard>
             
-            <NeonCard color="secondary" delay={0.4}>
+            <NeonCard color="secondary" delay={0.4} onClick={() => setSelectedEvent("logo")}>
               <h3 className="text-xl font-display text-white mb-4">LOGO RUSH</h3>
               <p className="font-mono text-sm text-white/70">Test your brand recognition and design deduction skills under time pressure.</p>
             </NeonCard>
@@ -342,14 +342,19 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
               <div className="glass-panel p-6 rounded-xl border-l-4 border-l-green-500 hover:bg-green-500/5 transition-colors">
-                <h4 className="font-display text-lg text-white mb-1">COORDINATOR ALPHA</h4>
-                <p className="font-mono text-green-400">Dr. System Admin</p>
-                <p className="font-mono text-white/50 text-sm mt-2">+91 98765 43210</p>
+                <h4 className="font-display text-lg text-white mb-1">Faculty Coordinator</h4>
+                <p className="font-mono text-green-400">Mrs.P.Showmiya Asst.prof -Cyber Security</p>
+                <p className="font-mono text-white/50 text-sm mt-2">+91 9384949279</p>
               </div>
               <div className="glass-panel p-6 rounded-xl border-l-4 border-l-green-500 hover:bg-green-500/5 transition-colors">
-                <h4 className="font-display text-lg text-white mb-1">COORDINATOR BETA</h4>
-                <p className="font-mono text-green-400">Prof. Network Sec</p>
-                <p className="font-mono text-white/50 text-sm mt-2">+91 98765 43211</p>
+                <h4 className="font-display text-lg text-white mb-1">Student Coordinator</h4>
+                <p className="font-mono text-green-400">S.Muthumani</p>
+                <p className="font-mono text-white/50 text-sm mt-2">+91 8098088892</p>
+              </div>
+              <div className="glass-panel p-6 rounded-xl border-l-4 border-l-green-500 hover:bg-green-500/5 transition-colors">
+                <h4 className="font-display text-lg text-white mb-1">Student Coordinator</h4>
+                <p className="font-mono text-green-400">S.Anusuya</p>
+                <p className="font-mono text-white/50 text-sm mt-2">+91 9629207480</p>
               </div>
             </div>
 
